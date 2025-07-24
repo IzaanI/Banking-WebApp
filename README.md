@@ -12,3 +12,8 @@ A minimalist banking system with a C++ (Crow) backend and a React frontend. User
 - 🧮 SQLite database integration
 - 📦 Crow-powered C++ backend with JSON endpoints
 - 🎨 Responsive React frontend styled with modern CSS
+
+<img width="1368" height="906" alt="banking-system-login-page" src="https://github.com/user-attachments/assets/13983ff3-c8f8-41f3-bb94-2fa0cd5a4685" />
+
+<img width="1808" height="910" alt="banking-system-dashboard" src="https://github.com/user-attachments/assets/5d4cb4e8-bfbf-46ed-a26c-d594ccba7a8a" />
+

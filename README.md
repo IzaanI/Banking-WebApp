@@ -1,6 +1,7 @@
 # 💳 Simple Banking System (Full Stack)
 
-A minimalist banking system with a C++ (Crow) backend, SQLite database, and a React frontend. Users can sign in, deposit, withdraw, transfer funds, generate credit  and view balances — all with clean UI and secure logic.
+A minimalist banking system with a C++ (Crow) backend, SQLite database, and a React frontend. Users can sign in, deposit, withdraw, transfer funds, generate credit  and view balances — all with clean UI and secure logic. 
+Note: Since this project requires database hosting in order to function as intended, this webapp is not hosted publicly at this time. You may download the source code and required depedencies if you want to run it yourself :)
 
 ---
 

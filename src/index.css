@@ -1,0 +1,429 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  display:block;
+}
+button:hover {
+  border-color: #53c5f2;
+}
+/*
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}*/
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+select{
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  font-size:15px;
+  border-radius:6px;
+  height:31px;
+}
+
+.Header{
+  margin:0 px;
+  padding-bottom:0 px;
+}
+
+.signInMenu{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.createAccountbutton{
+  margin-left: 6px;
+}
+
+.footer{
+  position:fixed;
+  bottom:20px;
+  left:20px;
+}
+
+input{
+  margin-bottom: 12px;
+  padding:10px;
+  background-color: #242424;
+  border-radius: 10px;
+  border: 2px solid;
+  border-color:#a3a3a3 #dcdcdc #ffffff #8c8c8c;
+}
+
+.input:focus{
+  border-color:#a3a3a3 #dcdcdc #ffffff #8c8c8c;
+  box-shadow: #1a1a1a 7px 7px 10px;
+}
+
+.input:hover{
+  opacity:75%;
+}
+
+.passwordField{
+  margin-top:0px;
+  margin-bottom: 30px;
+  padding:10px;
+  background-color: #242424;
+  border-radius: 10px;
+  border: 2px solid;
+  border-color:#a3a3a3 #dcdcdc #ffffff #8c8c8c;
+}
+
+
+
+.signInFields{
+  margin: 0 auto;
+  width:180px;
+}
+
+.signInButton{
+  margin-right:6px;
+}
+
+.Toastify__progress-bar-theme--dark {
+  --toastify-color-progress-dark: #53c5f2;
+}
+
+/* CSS */
+.signInFields {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip {
+  visibility: hidden;
+  position: absolute;
+  top: 4%;
+  left: 110%;
+  background-color: #333;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.inputUsername:hover .tooltip {
+  visibility: visible;
+}
+
+.tooltip1 {
+  visibility: hidden;
+  position: absolute;
+  top: 13.5%;
+  left: 110%;
+  background-color: #333;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.inputPassword:hover .tooltip1 {
+  visibility: visible;
+}
+
+.logout-button{
+  position:fixed;
+  top:30px;
+  right:30px;
+}
+
+.card{
+  display:flex;
+  background-color: #ffffffde;
+  color: black;
+  border-radius: 12px;
+  padding:20px;
+  margin: 20px 0;
+  margin-bottom:0;
+  width:100vw;
+}
+
+.balance{
+  font-size:100px;
+  padding: 0;
+  margin:0;
+  line-height:1;
+}
+
+.cards-container{
+  display:flex;
+  justify-content: center;
+}
+
+.account-info{
+  display:flex;
+  max-width:50%;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.account-info-buttons{
+  display:flex;
+  width:100%;
+  height:100%;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.account-balance-text{
+  display:flex;
+  font-weight:normal;
+  margin: 0px ;
+  padding:0;
+  justify-content: left;
+}
+
+.deposit-button{
+  height: 50%;
+  width:30%;
+  /*min-width:297.24px;*/
+  margin-right:4px;
+}
+
+.withdraw-button{
+  height:50%;
+  width:30%;
+  /*min-width:297.24px;*/
+}
+
+.account-info-right{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  height:114%;
+  width:100%;
+
+}
+
+.move-money-field1{
+  border:none;
+  margin: 0px;
+  width: 58.4%;
+}
+
+.move-money-field1:focus{
+  outline:none;
+}
+
+.bottom-container{
+  display:flex;
+  flex-direction: row;
+  margin-top: 0;
+  gap:16px;
+}
+
+.transfer-card{
+  display:flex;
+  flex-direction: column;
+  background-color: #ffffffde;
+  color: black;
+  border-radius: 12px;
+  width:50%;
+  padding:20px;
+  padding-top:10px;
+  margin: 20px 0;
+}
+
+.credit-card{
+  display:flex;
+  flex-direction: column;
+  background-color: #ffffffde;
+  color: black;
+  border-radius: 12px;
+  width:50%;
+  padding:20px;
+  padding-top:10px;
+  margin: 20px 0;
+  
+}
+
+.quick-transfer-text{
+  margin-top:10px;
+}
+
+.amount-text{
+  display:flex;
+  font-weight:normal;
+  margin: 0px ;
+  padding:0;
+  justify-content: center;
+  gap: 30px;
+  font-size:20px;
+}
+
+.transfer-amount-input{
+  border:none;
+  width: 360px;
+  outline:none;
+  /*justify-content: right;*/
+}
+
+.recipient-text{
+  display:flex;
+  font-weight:normal;
+  margin: 0px ;
+  padding:0;
+  justify-content: center;
+  gap: 20px;
+  font-size:20px;
+}
+
+.recipient-amount-input{
+  border:none;
+  width: 360px;
+  outline:none;
+}
+
+.send-money-button{
+  width: 16%;
+  margin-top:16px;
+  margin-bottom:8px;
+  justify-content: center;
+  align-self: center;
+}
+
+/*.age-dropdown{
+
+}*/
+
+.age-text{
+  font-size:20px;
+}
+
+.left-credit{
+  display:flex;
+  left:50px;
+  margin-left:15px;
+  flex-direction: column;
+  gap:19px;
+  width:35%;
+  justify-content: center;
+}
+
+/*put income and home-ownership stuff here */
+.income-text{
+  font-size:20px;
+}
+
+.home-text{
+  font-size: 19px;
+  margin-right:4px;
+}
+
+.home-elements{
+  display:flex;
+  flex-direction:row;
+}
+
+.credit-interactables{
+  
+  padding-left:16px;
+  display:flex;
+  width:100%;
+  gap:100px;
+}
+
+.credit-right{
+  display:flex;
+  justify-content: right;
+  margin-top:26px;
+  gap:4px;
+}
+
+.generate-report-button{
+  margin-top:13px;
+  margin-right:0;
+  width:50%;
+  align-items: center;
+  height:50%;
+  justify-items: center;
+  align-content:center;
+  justify-content: center;
+}
+
+.accounts-button{
+  margin-top:13px;
+  margin-right:0;
+  width:50%;
+  align-items: center;
+  height:50%;
+  justify-items: center;
+  align-content:center;
+  justify-content: center;
+}
